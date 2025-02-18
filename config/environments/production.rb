@@ -51,7 +51,7 @@ Rails.application.configure do
     namespace: "stark-gorge-84533_cache",
     expires_in: 90.minutes
 }
-
+config.action_dispatch.rack_cache = true
 
   # Replace the default in-process and non-durable queuing backend for Active Job.
   config.active_job.queue_adapter = :solid_queue
