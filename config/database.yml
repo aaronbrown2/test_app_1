@@ -23,11 +23,11 @@ production:
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   url: <%= ENV['DATABASE_URL'] %>
 
-  queue:
-    adapter: postgresql
-    encoding: unicode
-    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-    database: <%= ENV['QUEUE_DATABASE_URL'] %>
+queue:
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: <%= ENV['QUEUE_DATABASE_URL'] %>
   
 cable:
     adapter: postgresql
