@@ -19,7 +19,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 
 gem "pg"
-gem "redis", "~> 4.0"
+gem "redis", "~> 5.4"
 gem "hiredis", "~> 0.6.3"
 gem "rack-cache"
 
